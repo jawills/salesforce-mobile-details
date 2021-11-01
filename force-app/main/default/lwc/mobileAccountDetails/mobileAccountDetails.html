@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Details">
+        <lightning-record-view-form object-api-name="Account" record-id={recordId}>
+            <!-- header -->
+            <div class="slds-gutter">
+                <lightning-output-field class="slds-border_top"
+                    field-name="Name">
+                </lightning-output-field>
+                <lightning-output-field class="slds-border_top"
+                    field-name="ParentId">
+                </lightning-output-field>
+                <lightning-output-field class="slds-border_top"
+                field-name="Website">
+                </lightning-output-field>
+                <lightning-output-field class="slds-border_top"
+                field-name="Phone">
+                </lightning-output-field>
+
+                <div class="slds-m-top_medium">
+                    <h3 class="slds-section-title--divider">Addresses</h3>
+                    <lightning-output-field class="slds-border_top"
+                    field-name="BillingAddress">
+                    </lightning-output-field>
+                    <lightning-output-field class="slds-border_top"
+                    field-name="ShippingAddress">
+                    </lightning-output-field>
+                </div>
+                
+
+            </div>
+        </lightning-record-view-form>
+    </lightning-card>
+
+</template>
